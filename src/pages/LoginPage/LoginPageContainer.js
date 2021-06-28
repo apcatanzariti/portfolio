@@ -3,9 +3,9 @@ import LoginPageContent from './LoginPageContent';
 
 function LoginPageContainer () {
     return (
-        <>
+        <div class = 'container'>
             <LoginPageContent />
-        </>
+        </div>
     );
 }
 

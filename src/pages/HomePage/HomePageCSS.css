@@ -1,0 +1,9 @@
+.about_me_container {
+    background-color: #FFFFFF;
+    margin-top: 30%;
+    padding: 5%;
+}
+
+.about_me_img {
+    border: solid 5px black;
+}

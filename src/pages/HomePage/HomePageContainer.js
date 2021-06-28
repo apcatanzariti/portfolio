@@ -3,9 +3,9 @@ import RenderHomePage from './HomePageContent';
 
 function HomePageContainer () {
     return (
-        <>
+        <div class = 'container'>
             <RenderHomePage />
-        </>
+        </div>
     );
 }
 
