@@ -11,7 +11,7 @@ function NavBar () {
                 <h1><Link to='/'>Anthony Catanzariti</Link></h1>
                 <NavLinksDiv>
                     <Link to='/projects'><h2>Projects</h2></Link>
-                    <h2>Demos</h2>
+                    <h2><Link to='/'>Demos</Link></h2>
                     <h2><Link to='/contact'>Contact</Link></h2>
                 </NavLinksDiv>
             </StyledNavContainer>
@@ -32,7 +32,8 @@ const StyledNavContainer = styled.div`
     padding: 22px 0 22px 0px;
     box-shadow: 0px 3px 10px 0px gray;
     position: fixed;
-    width: 99.99%;
+    width: 100vw;
+    margin-left: -.4%;
     top: 0;
     z-index: 9999;
     background-color: white;
