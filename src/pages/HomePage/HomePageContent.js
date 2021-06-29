@@ -72,14 +72,16 @@ const StyledAboutMeContainer = styled.div`
     img {
         //border: solid 1px black;
         margin-top: 5rem;
-        filter: hue-rotate(-50deg);
+        //filter: hue-rotate(-50deg);
+        filter: hue-rotate(-69deg);
         width: 40%;
         margin-bottom: -.19rem;
     }
 `;
 
 const StyledAboutInfo = styled.div`
-    background-color: #0048E3;
+    //background-color: #0048E3;
+    background-color: #0058B6;
     padding: 5rem 5rem 25rem 5rem;
 
     h1 {
@@ -129,7 +131,7 @@ const StyledLeftCard = styled.div`
 
     img {
         display: block;
-        width: 30%;
+        width: 20%;
     }
 
     span {
@@ -143,7 +145,7 @@ const StyledMiddleCard = styled.div`
 
     img {
         display: block;
-        width: 30%;
+        width: 20%;
     }
 
     span {
@@ -158,7 +160,7 @@ const StyledRightCard = styled.div`
 
     img {
         display: block;
-        width: 25%;
+        width: 16.5%;
     }
 
     span {
@@ -171,7 +173,7 @@ const StyledItalics = styled.p`
 `;
 
 const StyledToolsText = styled.p`
-    color: #0048E3;
+    color: #0058B6;
     font-weight: bold;
     font-size: 1.1em;
 `;
