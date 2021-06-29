@@ -8,7 +8,7 @@ import ComputerImage from '../../assets/computer_image.PNG'
 
 function RenderHomePage () {
     return (
-        <div className='container'>
+        <>
             <NavBar />
             <StyledAboutMeContainer>
                 <h1>Full Stack Web Developer, Believer in Beautiful UX/UI, Lifelong Learner</h1>
@@ -54,7 +54,7 @@ function RenderHomePage () {
                 </StyledCardContainer></center>
             </StyledAboutMeContainer>
             <Footer />
-        </div> //container
+        </>
     );
 }
 
