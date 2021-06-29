@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavBar from '../common/NavBar';
+import Footer from '../common/Footer';
 // import './HomePageCSS.css';
 import MyPhoto from '../../assets/Pic_2.jpeg';
 import ComputerImage from '../../assets/computer_image.PNG'
@@ -23,35 +24,36 @@ function RenderHomePage () {
                     <StyledLeftCard>
                         <img src='https://mattfarley.ca/img/icons/designer.svg' alt='pencil icon' />
                         <h3>Designer</h3>
-                        <p>I love designing everything from user flows to wireframes and everything in between.</p>
+                        <StyledItalics>I love designing everything from user flows to wireframes and everything in between.</StyledItalics>
                         <StyledToolsText>Design Tools:</StyledToolsText>
-                        <p>Whimsical: A really intuitive design tool for user flows and wireframing.</p>
-                        <p>Trello: When working in a team, a Trello board makes it easy to keep track of tasks.</p>
-                        <p>Pen & Paper: Good ol' pen and paper is sometimes the best for turning creative ideas into reality.</p>
-                        <p>Figma: learning Figma at the moment, but seems like a really powerful design tool!</p>
+                        <p><span>Whimsical</span>: A really intuitive design tool for user flows and wireframing.</p>
+                        <p><span>Trello</span>: When working in a team, a Trello board makes it easy to keep track of tasks.</p>
+                        <p><span>Pen & Paper</span>: Good ol' pen and paper is sometimes the best for turning creative ideas into reality.</p>
+                        <p><span>Figma</span>: learning Figma at the moment, but seems like a really powerful design tool!</p>
                     </StyledLeftCard>
                     <StyledMiddleCard>
                         <img src='https://mattfarley.ca/img/icons/frontend.svg' alt='code icon' />
                         <h3>Frontend</h3>
-                        <p>I value clean front end code that is not only visually pleasing, but fast and functional.</p>
+                        <StyledItalics>I value clean front end code that is not only visually pleasing, but fast and functional.</StyledItalics>
                         <StyledToolsText>Dev Tools:</StyledToolsText>
-                        <p>JavaScript: Skilled in JavaScript. Previously used primarily PHP, but much prefer JavaScript now.</p>
-                        <p>React: An amazing JavaScript library for creating user interfaces. I love React for single page applications.</p>
-                        <p>Redux: I prefer to use Redux for state management in applications. I have exposure to Context as well, but Redux is my go-to.</p>
-                        <p>AntDesign: Got some exposure to AntDesign on two projects I worked on and has some really cool functionality.</p>
+                        <p><span>JavaScript</span>: Skilled in JavaScript. Previously used primarily PHP, but much prefer JavaScript now.</p>
+                        <p><span>React</span>: An amazing JavaScript library for creating user interfaces. I love React for single page applications.</p>
+                        <p><span>Redux</span>: I prefer to use Redux for state management in applications. I have exposure to Context as well, but Redux is my go-to.</p>
+                        <p><span>AntDesign</span>: Got some exposure to AntDesign on two projects I worked on and has some really cool functionality.</p>
                     </StyledMiddleCard>
                     <StyledRightCard>
                         <img src='https://mattfarley.ca/img/icons/mentor.svg' alt='book icon' />
                         <h3>Backend</h3>
-                        <p>Safely keeping track of data and making it accessible to the front end via APIs.</p>
+                        <StyledItalics>Safely keeping track of data and making it accessible to the front end via APIs.</StyledItalics>
                         <StyledToolsText>Dev Tools:</StyledToolsText>
-                        <p>Node: I've used Node on past projects for backend development. Syntax similar to JavaScript and scales well.</p>
-                        <p>Express: Express has been really effective in past projects for creating APIs to feed information to a frontend.</p>
-                        <p>DB Designer: Tool that I prefer for designing database schemas.</p>
-                        <p>Knex: Query builder. Effective for migrations and seeding data. I have used it in conjunction with Postgres, and SQLite.</p>
+                        <p><span>Node</span>: I've used Node on past projects for backend development. Syntax similar to JavaScript and scales well.</p>
+                        <p><span>Express</span>: Express has been really effective in past projects for creating APIs to feed information to a frontend.</p>
+                        <p><span>DB Designer</span>: Tool that I prefer for designing database schemas.</p>
+                        <p><span>Knex</span>: Query builder. Effective for migrations and seeding data. I have used it in conjunction with Postgres, and SQLite.</p>
                     </StyledRightCard>
                 </StyledCardContainer></center>
             </StyledAboutMeContainer>
+            <Footer />
         </div> //container
     );
 }
@@ -64,8 +66,6 @@ const StyledAboutMeContainer = styled.div`
     //border: solid 1px red;
     padding-top: 5rem;
     margin-top: 79px;
-    width: 99.9vw;
-    //height: 1600px;
 
     h1 {
         font-size: 2em;
@@ -93,7 +93,9 @@ const StyledAboutInfo = styled.div`
         color: white;
         font-size: 1.2em;
         line-height: 1.8rem;
-        width: 35%;
+        //width: 35%;
+        width: 800px;
+        /* will need a breakpoint here. Min-width for 1000px (or 800px) probably */
     }
 `;
 
@@ -103,8 +105,9 @@ const StyledCardContainer = styled.div`
     margin-top: -15rem;
     background-color: white;
     display: flex;
-    width: 40%;
-    //height: 60vh;
+    //width: 40%;
+    width: 1000px;
+    /* will need a breakpoint here. Min-width for 1000px (or 800px) probably */
 
     h3 {
         font-size: 1.5em;
@@ -130,6 +133,10 @@ const StyledLeftCard = styled.div`
         display: block;
         width: 30%;
     }
+
+    span {
+        font-weight: bold;
+    }
 `;
 
 const StyledMiddleCard = styled.div`
@@ -139,6 +146,10 @@ const StyledMiddleCard = styled.div`
     img {
         display: block;
         width: 30%;
+    }
+
+    span {
+        font-weight: bold;
     }
 `;
 
@@ -151,6 +162,14 @@ const StyledRightCard = styled.div`
         display: block;
         width: 25%;
     }
+
+    span {
+        font-weight: bold;
+    }
+`;
+
+const StyledItalics = styled.p`
+    font-style: italic;
 `;
 
 const StyledToolsText = styled.p`
