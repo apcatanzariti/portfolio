@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import NavBar from '../common/NavBar';
 import Footer from '../common/Footer';
 // import './HomePageCSS.css';
-import MyPhoto from '../../assets/Pic_2.jpeg';
-import ComputerImage from '../../assets/computer_image.PNG'
 
 function RenderHomePage () {
     return (
@@ -13,7 +11,7 @@ function RenderHomePage () {
             <StyledAboutMeContainer>
                 <h1>Full Stack Web Developer, Believer in Beautiful UX/UI, Lifelong Learner</h1>
 
-                <img className='about_me_img' src={ComputerImage} alt='Anthony Catanzariti'/>
+                <img src='https://mattfarley.ca/img/hero.svg' alt='Anthony Catanzariti'/>
 
                 <StyledAboutInfo>
                     <h1>Hi, I'm Anthony. Nice to meet you.</h1>
