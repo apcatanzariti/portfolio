@@ -38,10 +38,15 @@ const StyledNavContainer = styled.div`
     z-index: 9999;
     background-color: white;
 
-    h1 {
+    h1 a {
         font-size: 2em;
         color: #565656;
         margin-left: 44px;
+        text-decoration: none;
+    }
+
+    h1 a:hover {
+        text-decoration: none;
     }
 
     h2 {
@@ -52,6 +57,11 @@ const StyledNavContainer = styled.div`
     a {
         text-decoration: none;
         color: #565656;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-decoration-color: #afafaf;
     }
 `;
 
