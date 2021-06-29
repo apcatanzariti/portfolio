@@ -30,7 +30,7 @@ const StyledNavContainer = styled.div`
     padding: 22px 0 22px 0px;
     box-shadow: 0px 3px 10px 0px gray;
     position: fixed;
-    width: 99.9vw;
+    width: 99.99%;
     top: 0;
     z-index: 9999;
     background-color: white;
