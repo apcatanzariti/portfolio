@@ -8,7 +8,7 @@ function Footer () {
     return (
         <StyledFooterContainer>
             <StyledText>
-                <p>Thanks for checking out my website! 😁 All design and code done by me from scratch</p>
+                <p>Thanks for checking out my website! 😁</p>
             </StyledText>
             <StyledLinks>
                 <p><Link to='/projects'>Projects</Link></p>
@@ -39,6 +39,11 @@ const StyledFooterContainer = styled.div`
     a {
         text-decoration: none;
         color: #565656;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-decoration-color: #afafaf;
     }
 `;
 
