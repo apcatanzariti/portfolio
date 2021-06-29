@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link, useHistory } from 'react-router-dom';
 
 function Footer () {
+    const history = useHistory();
 
     return (
         <StyledFooterContainer>
@@ -9,9 +11,9 @@ function Footer () {
                 <p>Thanks for checking out my website! 😁 All design and code done by me from scratch</p>
             </StyledText>
             <StyledLinks>
-                <p>Projects</p>
-                <p>Demos</p>
-                <p>Contact</p>
+                <p><Link to='/projects'>Projects</Link></p>
+                <p><Link to='/'>Demos</Link></p>
+                <p><Link to='/contact'>Contact</Link></p>
             </StyledLinks>
         </StyledFooterContainer>
     );
@@ -33,6 +35,11 @@ const StyledFooterContainer = styled.div`
     padding: 3rem;
     margin-top: 5rem;
     box-shadow: 0px -3px 10px 0px lightgray;
+
+    a {
+        text-decoration: none;
+        color: #565656;
+    }
 `;
 
 const StyledText = styled.div`
@@ -43,7 +50,8 @@ const StyledText = styled.div`
 const StyledLinks = styled.div`
     border: none;
     color: #565656;
-    width: 12%;
+    //width: 12%;
+    width: 250px;
     display: flex;
     justify-content: space-between;
     margin-left: 1rem;

@@ -11,7 +11,7 @@ function RenderHomePage () {
             <StyledAboutMeContainer>
                 <h1>Full Stack Web Developer, Believer in Beautiful UX/UI, Lifelong Learner</h1>
 
-                <img src='https://mattfarley.ca/img/hero.svg' alt='Anthony Catanzariti'/>
+                <img src='https://mattfarley.ca/img/hero.svg' alt='computer'/>
 
                 <StyledAboutInfo>
                     <h1>Hi, I'm Anthony. Nice to meet you.</h1>
