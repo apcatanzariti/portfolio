@@ -64,6 +64,7 @@ const StyledAboutMeContainer = styled.div`
     //border: solid 1px red;
     padding-top: 5rem;
     margin-top: 79px;
+    text-align: center;
 
     h1 {
         font-size: 2em;
@@ -82,7 +83,8 @@ const StyledAboutMeContainer = styled.div`
 const StyledAboutInfo = styled.div`
     //background-color: #0048E3;
     background-color: #0058B6;
-    padding: 5rem 5rem 25rem 5rem;
+    padding: 5rem 0rem 25rem 0rem;
+    width: 100%;
 
     h1 {
         color: white;
@@ -93,8 +95,8 @@ const StyledAboutInfo = styled.div`
         color: white;
         font-size: 1.2em;
         line-height: 1.8rem;
-        //width: 35%;
-        width: 800px;
+        //width: 64%;
+        width: 50rem;
         /* will need a breakpoint here. Min-width for 1000px (or 800px) probably */
     }
 `;
@@ -105,8 +107,7 @@ const StyledCardContainer = styled.div`
     margin-top: -15rem;
     background-color: white;
     display: flex;
-    //width: 40%;
-    width: 1000px;
+    width: 60rem;
     /* will need a breakpoint here. Min-width for 1000px (or 800px) probably */
 
     h3 {
