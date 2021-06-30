@@ -3,7 +3,7 @@ import RenderHomePage from './HomePageContent';
 
 function HomePageContainer () {
     return (
-        <div class='container'>
+        <div className='container'>
             <RenderHomePage />
         </div> // container
     );
