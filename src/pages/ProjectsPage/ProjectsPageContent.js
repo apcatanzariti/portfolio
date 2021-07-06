@@ -60,7 +60,7 @@ function ProjectsPageContent () {
                             <StyledMiddleCard>
                                 <h3>Tech</h3>
                                 <p><span>Slack: </span>Here is some info on using Slack!</p>
-                                <p><span>Zoom: </span>Here is some info on using Zoom!</p>
+                                <p><span>Trello: </span>Here is some info on using Trello!</p>
                                 <p><span>Google Docs: </span>Here is some info on using Google Docs!</p>
                                 <p><span>AirTable: </span>Here is some info on using AirTable!</p>
                             </StyledMiddleCard>
@@ -74,15 +74,94 @@ function ProjectsPageContent () {
                     }
 
                     { FPButton && 
-                        <p>this is what comes up when pressing the Family Promise button!</p>
+                        <>
+                            <div>
+                            <h1>Family Promise Service Tracker</h1>
+                            <p>The Boys and Girls Club Sentiment Tracker is an application that gathers and records data for thousands of kids as they check in/out of clubs and utilize the activities within the clubs. This data is actionable, allowing leadership to make more meaningful, impactful decisions about where to allocate limited resources.</p>
+                            </div>
+
+                            <center><StyledCardContainer>
+                            <StyledLeftCard>
+                                <h3>Role</h3>
+                                <p><span>Frontend Development: </span>This is some info on being a frontend dev for this project!</p>
+                                <p><span>Design Lead: </span>This is some info on being the design lead for this project!</p>
+                                <p><span>Backend Development: </span>This is some info on being a backend dev for this project!</p>
+                            </StyledLeftCard>
+                            <StyledMiddleCard>
+                                <h3>Tech</h3>
+                                <p><span>JavaScript: </span>Here is some info on using JavaScript!</p>
+                                <p><span>React: </span>Here is some info on using React!</p>
+                                <p><span>Redux: </span>Here is some info on using Redux!</p>
+                                <p><span>Node: </span>Here is some info on using Node!</p>
+                                <p><span>Whimsical: </span>Here is some info on using Whimsical!</p>
+                                <p><span>AntDesign: </span>Here is some info on using AntDesign!</p>
+                                <p><span>Okta: </span>Here is some info on using Okta!</p>
+                            </StyledMiddleCard>
+                            <StyledRightCard>
+                                <h3>Links</h3>
+                                <p><span>GitHub: </span>GitHub link here!</p>
+                                <p><span>Live Demo: </span>Live demo stuff here if applicable.</p>
+                            </StyledRightCard>
+                            </StyledCardContainer></center>
+                        </>
                     }
 
                     { SCButton && 
-                        <p>this is what comes up when pressing the School in the Cloud button!</p>
+                        <>
+                            <div>
+                            <h1>School in the Cloud</h1>
+                            <p>The Boys and Girls Club Sentiment Tracker is an application that gathers and records data for thousands of kids as they check in/out of clubs and utilize the activities within the clubs. This data is actionable, allowing leadership to make more meaningful, impactful decisions about where to allocate limited resources.</p>
+                            </div>
+
+                            <center><StyledCardContainer>
+                            <StyledLeftCard>
+                                <h3>Role</h3>
+                                <p><span>Frontend Development: </span>This is some info on being a frontend dev for this project!</p>
+                                <p><span>Design Lead: </span>This is some info on being the design lead for this project!</p>
+                            </StyledLeftCard>
+                            <StyledMiddleCard>
+                                <h3>Tech</h3>
+                                <p><span>JavaScript: </span>Here is some info on using JavaScript!</p>
+                                <p><span>React: </span>Here is some info on using React!</p>
+                                <p><span>Redux: </span>Here is some info on using Redux!</p>
+                                <p><span>Styled Components: </span>Here is some info on using Styled Components!</p>
+                                <p><span>Whimsical: </span>Here is some info on using Whimsical!</p>
+                            </StyledMiddleCard>
+                            <StyledRightCard>
+                                <h3>Links</h3>
+                                <p><span>GitHub: </span>GitHub link here!</p>
+                                <p><span>Live Demo: </span>Live demo stuff here if applicable.</p>
+                            </StyledRightCard>
+                            </StyledCardContainer></center>
+                        </>
                     }
 
                     { AFButton && 
-                        <p>this is what comes up when pressing the Anywhere Fitness button!</p>
+                        <>
+                            <div>
+                            <h1>Anywhere Fitness</h1>
+                            <p>The Boys and Girls Club Sentiment Tracker is an application that gathers and records data for thousands of kids as they check in/out of clubs and utilize the activities within the clubs. This data is actionable, allowing leadership to make more meaningful, impactful decisions about where to allocate limited resources.</p>
+                            </div>
+
+                            <center><StyledCardContainer>
+                            <StyledLeftCard>
+                                <h3>Role</h3>
+                                <p><span>Backend Development: </span>This is some info on being a backend dev for this project!</p>
+                            </StyledLeftCard>
+                            <StyledMiddleCard>
+                                <h3>Tech</h3>
+                                <p><span>Node: </span>Here is some info on using Node!</p>
+                                <p><span>Express: </span>Here is some info on using Express!</p>
+                                <p><span>Knex: </span>Here is some info on using Knex!</p>
+                                <p><span>DB Designer: </span>Here is some info on using DB Designer!</p>
+                            </StyledMiddleCard>
+                            <StyledRightCard>
+                                <h3>Links</h3>
+                                <p><span>GitHub: </span>GitHub link here!</p>
+                                <p><span>Live Demo: </span>Live demo stuff here if applicable.</p>
+                            </StyledRightCard>
+                            </StyledCardContainer></center>
+                        </>
                     }
                 </StyledProjectContentContainer>
             </StyledProjectContainer>
