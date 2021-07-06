@@ -46,7 +46,31 @@ function ProjectsPageContent () {
                 </StyledProjectIconsContainer>
                 <StyledProjectContentContainer>
                     { BGCButton && 
-                        <p>this is what comes up when pressing the BG Club button!</p>
+                        <>
+                            <div>
+                            <h1>Boys and Girls Club Sentiment Tracking Application</h1>
+                            <p>The Boys and Girls Club Sentiment Tracker is an application that gathers and records data for thousands of kids as they check in/out of clubs and utilize the activities within the clubs. This data is actionable, allowing leadership to make more meaningful, impactful decisions about where to allocate limited resources.</p>
+                            </div>
+
+                            <center><StyledCardContainer>
+                            <StyledLeftCard>
+                                <h3>Role</h3>
+                                <p><span>Technical Project Lead: </span>This is some info on being the TPL for this project!</p>
+                            </StyledLeftCard>
+                            <StyledMiddleCard>
+                                <h3>Tech</h3>
+                                <p><span>Slack: </span>Here is some info on using Slack!</p>
+                                <p><span>Zoom: </span>Here is some info on using Zoom!</p>
+                                <p><span>Google Docs: </span>Here is some info on using Google Docs!</p>
+                                <p><span>AirTable: </span>Here is some info on using AirTable!</p>
+                            </StyledMiddleCard>
+                            <StyledRightCard>
+                                <h3>Links</h3>
+                                <p><span>GitHub: </span>GitHub link here!</p>
+                                <p><span>Live Demo: </span>Live demo stuff here if applicable.</p>
+                            </StyledRightCard>
+                            </StyledCardContainer></center>
+                        </>
                     }
 
                     { FPButton && 
@@ -83,7 +107,6 @@ const StyledProjectContainer = styled.div`
         font-size: 2em;
         color: #565656;
         margin-bottom: 2rem;
-        text-align: center;
     }
 `;
 
@@ -129,7 +152,75 @@ const StyledIcon = styled.div`
 
 const StyledProjectContentContainer = styled.div`
     //border: solid 1px red;
-    padding: 2%;
     margin-top: 2rem;
     width: 60rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #565656;
+
+    h1 {
+        color: #0058B6;
+    }
+
+    p {
+        width: 100%;
+        line-height: 1.4;
+    }
+`;
+
+/* Cards Below */
+
+const StyledCardContainer = styled.div`
+    //border: solid 1px lightgray;
+    //border-radius: 3%;
+    box-shadow: 0 0 10px 0 lightgray;
+    margin-top: 3rem;
+    background-color: white;
+    display: flex;
+    width: 60rem;
+    /* will need a breakpoint here. Min-width for 1000px (or 800px) probably */
+
+    h3 {
+        border-bottom: solid 1px lightgray;
+        font-size: 1.5em;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+        padding-bottom: 1rem;
+    }
+
+    p {
+        line-height: 1.4em;
+        margin-top: 1rem;
+    }
+`;
+
+const StyledLeftCard = styled.div`
+    border-right: solid 1px lightgray;
+    width: 33%;
+    padding: 2rem 2rem;
+
+    span {
+        font-weight: bold;
+    }
+`;
+
+const StyledMiddleCard = styled.div`
+    width: 34%;
+    padding: 2rem 2rem;
+
+    span {
+        font-weight: bold;
+    }
+`;
+
+const StyledRightCard = styled.div`
+    border-left: solid 1px lightgray;
+    width: 33%;
+    padding: 2rem 2rem;
+
+    span {
+        font-weight: bold;
+    }
 `;

@@ -10,7 +10,7 @@ function NavBar () {
             <StyledNavContainer>
                 <h1><Link to='/'>Anthony Catanzariti</Link></h1>
                 <NavLinksDiv>
-                    <Link to='/projects'><h2>Projects</h2></Link>
+                    <h2><Link to='/projects'>Projects</Link></h2>
                     <h2><Link to='/'>Demos</Link></h2>
                     <h2><Link to='/contact'>Contact</Link></h2>
                 </NavLinksDiv>
@@ -59,8 +59,7 @@ const StyledNavContainer = styled.div`
     }
 
     a:hover {
-        text-decoration: underline;
-        text-decoration-color: #afafaf;
+        color: #0058B6;
     }
 `;
 

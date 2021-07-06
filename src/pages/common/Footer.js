@@ -41,8 +41,7 @@ const StyledFooterContainer = styled.div`
     }
 
     a:hover {
-        text-decoration: underline;
-        text-decoration-color: #afafaf;
+        color: #0058B6;
     }
 `;
 
