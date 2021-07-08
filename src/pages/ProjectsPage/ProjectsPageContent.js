@@ -15,6 +15,7 @@ function ProjectsPageContent () {
             setFPButton(false);
             setSCButton(false);
             setAFButton(false);
+            console.log(BGCButton);
         } else if (project === 'FP') {
             setBGCButton(false);
             setFPButton(true);
@@ -39,10 +40,10 @@ function ProjectsPageContent () {
             <StyledProjectContainer>
                 <h1>Choose a project to see some details about it</h1>
                 <StyledProjectIconsContainer>
-                    <StyledIcon onClick = {() => ToggleVisible('BGClub')}><img src='https://www.bgchartford.org/wp-content/uploads/2018/12/favicon.png' alt='Boys and Girls Club logo'/><div><p>Boys and Girls Club of America</p></div></StyledIcon>
-                    <StyledIcon onClick = {() => ToggleVisible('FP')}><img src='https://user-content.givegab.com/uploads/group/logo/475393/f4cb8e3658f999caceb4153fd70a662561736ef8.png' alt='Family Promise logo'/><div><p>Family Promise</p></div></StyledIcon>
-                    <StyledIcon onClick = {() => ToggleVisible('SC')}><img src='https://cloudevents.io/img/logos/integrations/triggermesh.png' alt='School In the Cloud logo'/><div><p>School In The Cloud</p></div></StyledIcon>
-                    <StyledIcon onClick = {() => ToggleVisible('AF')}><img src='https://cdn.iconscout.com/icon/free/png-256/github-3215409-2673827.png' alt='GitHub logo'/><div><p>Anywhere Fitness</p></div></StyledIcon>
+                    <StyledIcon active={BGCButton} onClick = {() => ToggleVisible('BGClub')}><img src='https://www.bgchartford.org/wp-content/uploads/2018/12/favicon.png' alt='Boys and Girls Club logo'/><div><p>Boys and Girls Club of America</p></div></StyledIcon>
+                    <StyledIcon active={FPButton} onClick = {() => ToggleVisible('FP')}><img src='https://user-content.givegab.com/uploads/group/logo/475393/f4cb8e3658f999caceb4153fd70a662561736ef8.png' alt='Family Promise logo'/><div><p>Family Promise</p></div></StyledIcon>
+                    <StyledIcon active={SCButton} onClick = {() => ToggleVisible('SC')}><img src='https://cloudevents.io/img/logos/integrations/triggermesh.png' alt='School In the Cloud logo'/><div><p>School In The Cloud</p></div></StyledIcon>
+                    <StyledIcon active={AFButton} onClick = {() => ToggleVisible('AF')}><img src='https://cdn.iconscout.com/icon/free/png-256/github-3215409-2673827.png' alt='GitHub logo'/><div><p>Anywhere Fitness</p></div></StyledIcon>
                 </StyledProjectIconsContainer>
                 <StyledProjectContentContainer>
                     { BGCButton && 
@@ -52,24 +53,25 @@ function ProjectsPageContent () {
                             <p>The Boys and Girls Club Sentiment Tracker is an application that gathers and records data for thousands of kids as they check in/out of clubs and utilize the activities within the clubs. This data is actionable, allowing leadership to make more meaningful, impactful decisions about where to allocate limited resources.</p>
                             </div>
 
-                            <center><StyledCardContainer>
+                            <StyledCardContainer>
                             <StyledLeftCard>
                                 <h3>Role</h3>
-                                <p><span>Technical Project Lead: </span>This is some info on being the TPL for this project!</p>
+                                <p><span>Technical Project Lead: </span>As the technical project lead (TPL) for this application, I led a team of 6 developers working on new features for the app. The team was made up of 2 backend developers, 2 frontend developers, and 2 data scientists. I ran meetings each day to gauge the progress of the team and to assign new tasks for the day. I also conducted stakeholder meetings with the CEO and club director to show off progress and to gather feedback.</p>
                             </StyledLeftCard>
                             <StyledMiddleCard>
-                                <h3>Tech</h3>
-                                <p><span>Slack: </span>Here is some info on using Slack!</p>
-                                <p><span>Trello: </span>Here is some info on using Trello!</p>
-                                <p><span>Google Docs: </span>Here is some info on using Google Docs!</p>
-                                <p><span>AirTable: </span>Here is some info on using AirTable!</p>
+                                <h3>Tech Used</h3>
+                                <p><span>Slack: </span>Utilized Slack for team communication. Set up separate channels for each role as well as pull requests, so that each channel stayed organized and urgent messages could be seen quickly. All important information and links were pinned in relevant channels as well.</p>
+                                <p><span>Trello: </span>Trello was used to keep tasks organized. Could create a task, create a checklist for that task, and then tag the appropriate team members that needed to work on it. Once it was complete, the card would be moved over to a completed section. Bugs were kept track of in this way as well.</p>
+                                <p><span>Google Docs: </span>Made use of Google Docs to create documents as a team. Real time collaboration using this was key, and it allowed team members to take notes in real time - during stakeholder meetings for example.</p>
+                                <p><span>AirTable: </span>AirTable was used in order to keep track of team members and attendance to meetings. Has much more functionality but I used it for fairly basic tasks.</p>
                             </StyledMiddleCard>
                             <StyledRightCard>
                                 <h3>Links</h3>
-                                <p><span>GitHub: </span>GitHub link here!</p>
-                                <p><span>Live Demo: </span>Live demo stuff here if applicable.</p>
+                                <p><span>Frontend Repo: </span><a href='https://github.com/apcatanzariti/bg-emotion-tracker-fe' target='_blank'>Click Here</a></p>
+                                <p><span>Backend Repo: </span><a href='https://github.com/apcatanzariti/bg-emotion-tracker-be' target='_blank'>Click Here</a></p>
+                                <p><span>Live Demo: </span>None at this time.</p>
                             </StyledRightCard>
-                            </StyledCardContainer></center>
+                            </StyledCardContainer>
                         </>
                     }
 
@@ -77,32 +79,33 @@ function ProjectsPageContent () {
                         <>
                             <div>
                             <h1>Family Promise Service Tracker</h1>
-                            <p>The Boys and Girls Club Sentiment Tracker is an application that gathers and records data for thousands of kids as they check in/out of clubs and utilize the activities within the clubs. This data is actionable, allowing leadership to make more meaningful, impactful decisions about where to allocate limited resources.</p>
+                            <p>The Family Promise Service Tracker is an application that allows Service Workers to take notes on recipients and to track resources. The application also has functionality for Program Managers to add Programs and Services to be offered, and an Admin Dashboard to manage employees.</p>
                             </div>
 
-                            <center><StyledCardContainer>
+                            <StyledCardContainer>
                             <StyledLeftCard>
                                 <h3>Role</h3>
-                                <p><span>Frontend Development: </span>This is some info on being a frontend dev for this project!</p>
-                                <p><span>Design Lead: </span>This is some info on being the design lead for this project!</p>
-                                <p><span>Backend Development: </span>This is some info on being a backend dev for this project!</p>
+                                <p><span>Frontend Development: </span>Dashboards for the three roles (Admin, Program Manager, Service Worker) did not exist in the codebase when we took over the project, so I programmed them from the ground up.</p>
+                                <p><span>Design Lead: </span>As the design lead, I created example user flows to ensure the UI/UX was optimal, and created wireframes for each page which were used as a visual reference when programming those pages. Also collaborated with team members on one-off design/style choices where applicable.</p>
+                                <p><span>Backend Development: </span>I was not the primary backend developer on the team, but I did assist in some cases with endpoints that would feed relevant data to our frontend.</p>
                             </StyledLeftCard>
                             <StyledMiddleCard>
-                                <h3>Tech</h3>
-                                <p><span>JavaScript: </span>Here is some info on using JavaScript!</p>
-                                <p><span>React: </span>Here is some info on using React!</p>
-                                <p><span>Redux: </span>Here is some info on using Redux!</p>
-                                <p><span>Node: </span>Here is some info on using Node!</p>
-                                <p><span>Whimsical: </span>Here is some info on using Whimsical!</p>
-                                <p><span>AntDesign: </span>Here is some info on using AntDesign!</p>
-                                <p><span>Okta: </span>Here is some info on using Okta!</p>
+                                <h3>Tech Used</h3>
+                                <p><span>JavaScript: </span>Primary programming language used for this application.</p>
+                                <p><span>React: </span>My personal favorite library for creating compelling user interfaces within a single page application.</p>
+                                <p><span>Redux: </span>Redux was used in this application for state management. I find Redux a bit more intuitive than Context.</p>
+                                <p><span>Node: </span>Node was utilized for our backend functionality.</p>
+                                <p><span>Whimsical: </span>One of my favorite diagramming tools. Used Whimsical to map out user flows and to create wireframes side by side.</p>
+                                <p><span>AntDesign: </span>Design library that was used by the team that worked on the application previous to our team taking over. Has some nice designs and functionality.</p>
+                                <p><span>Okta: </span>Identity provider used in this application. Put in place by previous team, but I did have to work with it a bit to ensure the correct permissions were present to grant access to the appropriate dashboard, information, features, etc.</p>
                             </StyledMiddleCard>
                             <StyledRightCard>
                                 <h3>Links</h3>
-                                <p><span>GitHub: </span>GitHub link here!</p>
-                                <p><span>Live Demo: </span>Live demo stuff here if applicable.</p>
+                                <p><span>Frontend Repo: </span><a href='https://github.com/apcatanzariti/family-promise-service-tracker-fe-b' target='_blank'>Click Here</a></p>
+                                <p><span>Backend Repo: </span><a href='https://github.com/apcatanzariti/family-promise-service-tracker-be-b' target='_blank'>Click Here</a></p>
+                                <p><span>Live Demo: </span>None at this time.</p>
                             </StyledRightCard>
-                            </StyledCardContainer></center>
+                            </StyledCardContainer>
                         </>
                     }
 
@@ -113,14 +116,14 @@ function ProjectsPageContent () {
                             <p>The Boys and Girls Club Sentiment Tracker is an application that gathers and records data for thousands of kids as they check in/out of clubs and utilize the activities within the clubs. This data is actionable, allowing leadership to make more meaningful, impactful decisions about where to allocate limited resources.</p>
                             </div>
 
-                            <center><StyledCardContainer>
+                            <StyledCardContainer>
                             <StyledLeftCard>
                                 <h3>Role</h3>
                                 <p><span>Frontend Development: </span>This is some info on being a frontend dev for this project!</p>
                                 <p><span>Design Lead: </span>This is some info on being the design lead for this project!</p>
                             </StyledLeftCard>
                             <StyledMiddleCard>
-                                <h3>Tech</h3>
+                                <h3>Tech Used</h3>
                                 <p><span>JavaScript: </span>Here is some info on using JavaScript!</p>
                                 <p><span>React: </span>Here is some info on using React!</p>
                                 <p><span>Redux: </span>Here is some info on using Redux!</p>
@@ -132,7 +135,7 @@ function ProjectsPageContent () {
                                 <p><span>GitHub: </span>GitHub link here!</p>
                                 <p><span>Live Demo: </span>Live demo stuff here if applicable.</p>
                             </StyledRightCard>
-                            </StyledCardContainer></center>
+                            </StyledCardContainer>
                         </>
                     }
 
@@ -143,13 +146,13 @@ function ProjectsPageContent () {
                             <p>The Boys and Girls Club Sentiment Tracker is an application that gathers and records data for thousands of kids as they check in/out of clubs and utilize the activities within the clubs. This data is actionable, allowing leadership to make more meaningful, impactful decisions about where to allocate limited resources.</p>
                             </div>
 
-                            <center><StyledCardContainer>
+                            <StyledCardContainer>
                             <StyledLeftCard>
                                 <h3>Role</h3>
                                 <p><span>Backend Development: </span>This is some info on being a backend dev for this project!</p>
                             </StyledLeftCard>
                             <StyledMiddleCard>
-                                <h3>Tech</h3>
+                                <h3>Tech Used</h3>
                                 <p><span>Node: </span>Here is some info on using Node!</p>
                                 <p><span>Express: </span>Here is some info on using Express!</p>
                                 <p><span>Knex: </span>Here is some info on using Knex!</p>
@@ -160,7 +163,7 @@ function ProjectsPageContent () {
                                 <p><span>GitHub: </span>GitHub link here!</p>
                                 <p><span>Live Demo: </span>Live demo stuff here if applicable.</p>
                             </StyledRightCard>
-                            </StyledCardContainer></center>
+                            </StyledCardContainer>
                         </>
                     }
                 </StyledProjectContentContainer>
@@ -213,7 +216,7 @@ const StyledIcon = styled.div`
         height: 200px;
         width: 200px;
         background-color: black;
-        opacity: 80%;
+        //opacity: 80%;
         color: white;
         display: flex;
         justify-content: center;
@@ -222,6 +225,8 @@ const StyledIcon = styled.div`
         font-family: 'Roboto', Arial;
         cursor: pointer;
         // some conditional here so that when the state is "true", the opacity is 0%
+
+        ${props => (props.active === true ? 'opacity: 0%;' : `opacity: 80%;`)}
     }
 
     div:hover {
@@ -250,7 +255,7 @@ const StyledProjectContentContainer = styled.div`
     }
 `;
 
-/* Cards Below */
+/* Styling for Cards Below */
 
 const StyledCardContainer = styled.div`
     //border: solid 1px lightgray;
@@ -264,6 +269,7 @@ const StyledCardContainer = styled.div`
 
     h3 {
         border-bottom: solid 1px lightgray;
+        //color: #0058B6;
         font-size: 1.5em;
         font-family: 'Roboto', Arial, Helvetica, sans-serif;
         padding-bottom: 1rem;
@@ -301,5 +307,14 @@ const StyledRightCard = styled.div`
 
     span {
         font-weight: bold;
+    }
+
+    a {
+        color: #0058B6;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        text-decoration: underline;
     }
 `;
