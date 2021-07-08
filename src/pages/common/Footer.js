@@ -24,7 +24,7 @@ export default Footer;
 /* Styling Below This Line */
 
 const StyledFooterContainer = styled.div`
-    //border: solid 1px red;
+    //border-top: solid 1px #0058B6;
     width: 100%;
     //position: fixed;
     color: #565656;
@@ -33,7 +33,7 @@ const StyledFooterContainer = styled.div`
     font-size: 1em;
     padding: 3rem 0 3rem 0;
     margin-top: 5rem;
-    box-shadow: 0px -3px 10px 0px lightgray;
+    box-shadow: 0px 0px 10px 0px lightgray;
 
     a {
         text-decoration: none;
