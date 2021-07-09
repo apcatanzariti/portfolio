@@ -15,7 +15,6 @@ function ProjectsPageContent () {
             setFPButton(false);
             setSCButton(false);
             setAFButton(false);
-            console.log(BGCButton);
         } else if (project === 'FP') {
             setBGCButton(false);
             setFPButton(true);
@@ -113,27 +112,29 @@ function ProjectsPageContent () {
                         <>
                             <div>
                             <h1>School in the Cloud</h1>
-                            <p>The Boys and Girls Club Sentiment Tracker is an application that gathers and records data for thousands of kids as they check in/out of clubs and utilize the activities within the clubs. This data is actionable, allowing leadership to make more meaningful, impactful decisions about where to allocate limited resources.</p>
+                            <p>School in the Cloud is an application that connects learners and volunteers. Each has a dashboard to view relevant information, and there are administrators that can log in and have unique permissions as well. I worked primarily on the frontend portion of this project.</p>
                             </div>
 
                             <StyledCardContainer>
                             <StyledLeftCard>
                                 <h3>Role</h3>
-                                <p><span>Frontend Development: </span>This is some info on being a frontend dev for this project!</p>
-                                <p><span>Design Lead: </span>This is some info on being the design lead for this project!</p>
+                                <p><span>Frontend Development: </span>Developed the UI components and some of the functionality for the front end of this application.</p>
+                                <p><span>Design Lead: </span>Although we did not have very long to work on this project, I designed the layouts for each page and the user flow for each user role. Had input on one-off design decisions as well throughout the project.</p>
                             </StyledLeftCard>
                             <StyledMiddleCard>
                                 <h3>Tech Used</h3>
-                                <p><span>JavaScript: </span>Here is some info on using JavaScript!</p>
-                                <p><span>React: </span>Here is some info on using React!</p>
-                                <p><span>Redux: </span>Here is some info on using Redux!</p>
-                                <p><span>Styled Components: </span>Here is some info on using Styled Components!</p>
-                                <p><span>Whimsical: </span>Here is some info on using Whimsical!</p>
+                                <p><span>JavaScript: </span>Primary programming language used for this application.</p>
+                                <p><span>React: </span>My personal favorite library for creating compelling user interfaces within a single page application.</p>
+                                <p><span>Redux: </span>Redux was used in this application for state management. I find Redux a bit more intuitive than Context.</p>
+                                <p><span>Styled Components: </span>Utilized styled components (along with some CSS) to generate the look and feel of the UI for this project. Included some conditional rendering of some visuals using styled components as well.</p>
+                                <p><span>Whimsical: </span>One of my favorite diagramming tools. Used Whimsical to map out user flows and to create wireframes side by side.</p>
                             </StyledMiddleCard>
                             <StyledRightCard>
                                 <h3>Links</h3>
-                                <p><span>GitHub: </span>GitHub link here!</p>
-                                <p><span>Live Demo: </span>Live demo stuff here if applicable.</p>
+                                <p><span>Frontend Repo: </span><a href='https://github.com/apcatanzariti/School-In-The-Cloud' target='_blank'>Click Here</a></p>
+                                <p><span>Live Demo: </span><a href='https://school-in-the-cloud-pied.vercel.app/' target='_blank'>Click Here</a></p>
+                                <p><span>Demo as Admin: </span><br />username: "AdminTest" <br />password: "test" <br />role: "Admin"</p>
+                                <p><span>Demo as Student: </span><br />username: "StudentTest" <br />password: "test" <br />role: "Student"</p>
                             </StyledRightCard>
                             </StyledCardContainer>
                         </>
@@ -216,7 +217,6 @@ const StyledIcon = styled.div`
         height: 200px;
         width: 200px;
         background-color: black;
-        //opacity: 80%;
         color: white;
         display: flex;
         justify-content: center;
@@ -224,7 +224,6 @@ const StyledIcon = styled.div`
         font-size: 1.5em;
         font-family: 'Roboto', Arial;
         cursor: pointer;
-        // some conditional here so that when the state is "true", the opacity is 0%
 
         ${props => (props.active === true ? 'opacity: 0%;' : `opacity: 80%;`)}
     }
