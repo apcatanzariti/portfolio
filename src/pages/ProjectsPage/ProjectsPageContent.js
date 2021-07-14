@@ -144,25 +144,25 @@ function ProjectsPageContent () {
                         <>
                             <div>
                             <h1>Anywhere Fitness</h1>
-                            <p>The Boys and Girls Club Sentiment Tracker is an application that gathers and records data for thousands of kids as they check in/out of clubs and utilize the activities within the clubs. This data is actionable, allowing leadership to make more meaningful, impactful decisions about where to allocate limited resources.</p>
+                            <p>Anywhere Fitness is an application that connects clients and trainers. Trainers can stream classes and clients can join from wherever they are. Trainers can take attendance and send their clients personalized plans. Clients can search, find, and register for the perfect class(es) to achieve their goals!</p>
                             </div>
 
                             <StyledCardContainer>
                             <StyledLeftCard>
                                 <h3>Role</h3>
-                                <p><span>Backend Development: </span>This is some info on being a backend dev for this project!</p>
+                                <p><span>Backend Development: </span>Developed the backend for this project. Built out the APIs that fed information to the frontend of the application. Built out and implemented middleware to ensure that only authorized users had access to relevant information.</p>
                             </StyledLeftCard>
                             <StyledMiddleCard>
                                 <h3>Tech Used</h3>
-                                <p><span>Node: </span>Here is some info on using Node!</p>
-                                <p><span>Express: </span>Here is some info on using Express!</p>
-                                <p><span>Knex: </span>Here is some info on using Knex!</p>
-                                <p><span>DB Designer: </span>Here is some info on using DB Designer!</p>
+                                <p><span>Node: </span>Utilized Node to program backend. JavaScript runtime so the syntax was easy to use, and scales well.</p>
+                                <p><span>Express: </span>Framework for Node.js used to build out API for this application.</p>
+                                <p><span>Knex: </span>The query builder I used for this application. Used in conjunction with Postgres.</p>
+                                <p><span>DB Designer: </span>The database designer that I like using the most. Simple to use, but allows for the creation/editing of tables in an organized way.</p>
                             </StyledMiddleCard>
                             <StyledRightCard>
                                 <h3>Links</h3>
-                                <p><span>GitHub: </span>GitHub link here!</p>
-                                <p><span>Live Demo: </span>Live demo stuff here if applicable.</p>
+                                <p><span>GitHub Repo: </span><a href='https://github.com/apcatanzariti/Anywhere-Fitness-Backend' target='_blank'>Click Here</a></p>
+                                <p><span>Live Demo: </span>None at this time.</p>
                             </StyledRightCard>
                             </StyledCardContainer>
                         </>
